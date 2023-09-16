@@ -1,0 +1,84 @@
+.background{
+    background-image: url('../../images/bg_1.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.6);
+    height: 100vh;
+}
+.img{
+    background-image: url('../../images/logo_back.png');
+    background-size: cover;
+}
+.wrap{
+    background-color: #171A27;
+}
+.form-control{
+    background: #24283B;
+    color: #8f8f8f;
+}
+.form-group input:focus {
+    background: #24283B;
+    color: white;
+}
+
+textarea:focus {
+    background-color: #24283B !important;
+    color: white !important;
+}
+
+.form-group input:disabled {
+    background: #24283B;
+}
+.fa{
+    color: #5D5D5D;
+}
+
+#text_change{
+    color: whitesmoke;
+    font-size: large;
+    display: none;
+}
+
+#message_error{
+    color: red; 
+    font-size: medium; 
+    display: none;
+}
+#message_error_create{
+    color: red; 
+    font-size: medium; 
+    display: block;
+}
+#message_error2{
+    color: red; 
+    font-size: medium; 
+    display: block;
+}
+#password_changer{
+    display: none;
+}
+#submit1{
+    display: block;
+}
+.heading-section{
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #24283B;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}

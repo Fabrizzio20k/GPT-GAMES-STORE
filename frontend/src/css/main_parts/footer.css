@@ -1,0 +1,15 @@
+.nav svg {
+    fill: whitesmoke;
+}
+
+.container footer {
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, transparent, white, white, transparent) 1;
+    border-bottom: none;
+}
+#f_container{
+    background-color: #1e2746;
+    width: 100%;
+    bottom: 0;
+}

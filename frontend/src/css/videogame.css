@@ -1,0 +1,66 @@
+#general {
+    display: flex;
+    flex-direction: row;
+    background-color: darkgray;
+}
+
+#left {
+    background-color: lightblue;
+    margin: 4px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 70%;
+
+}
+
+.image_wide {
+    background-color: darkred;
+    padding: 8px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+#synopsis {
+    background-color: darkviolet;
+    padding: 8px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+#right {
+    background-color: darkgreen;
+    padding: 10px;
+    margin: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+}
+
+#buy {
+    background-color: darkcyan;
+    padding: 8px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
+
+#details {
+    background-color: darkorange;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+}

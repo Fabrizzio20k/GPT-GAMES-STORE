@@ -1,0 +1,58 @@
+.p-3.text-center{
+    background-color: #1e2746  !important;
+}
+.navbar.navbar-expand-lg{
+    background-color: #1e2746  !important;
+}
+a{
+    color: whitesmoke !important;
+}
+.sidenav{
+    background-color: #171A27  !important;
+}
+
+.dropdown-menu.dropdown-menu-end{
+    background-color: #373d58  !important;
+}
+.form-control.rounded{
+    background-color: #24283B !important;
+    color: whitesmoke;
+}
+.fas.fa-search{
+    color: whitesmoke !important;
+}
+.fas.fa-shopping-cart{
+    color: whitesmoke !important;
+}
+.badge.rounded-pill.badge-notification{
+    background-color: #289973;
+}
+.dropdown-item:hover {
+    background-color: #289973;
+}
+#flogo{
+    color: whitesmoke;
+}
+body{
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+#SearchInput:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #01d28e;
+}
+
+.nav-item a {
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+  
+.nav-item a:hover {
+    color: #3ac295 !important;
+    transition: color 0.3s ease-in-out;
+}
+
+
+  

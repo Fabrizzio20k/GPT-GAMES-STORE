@@ -1,0 +1,18 @@
+#SearchInput:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #01d28e;
+    color: whitesmoke;
+}
+#SearchInput{
+    outline: none;
+    box-shadow: none;
+    border-color: #bbbbbb;
+}
+#SearchInput::placeholder {
+    color: #6d6d6d !important; /* Cambia el color del placeholder a rojo */
+  }
+
+.dropdown-item:hover {
+    background-color: #289973 !important;
+}

@@ -1,0 +1,257 @@
+#container {
+    margin: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#game_details {
+    display: flex;
+    flex-wrap: wrap;
+}
+#left_column {
+    flex: 0 0 50%;
+    padding: 20px;
+
+}
+#right_column {
+    flex: 0 0 50%;
+    padding: 20px;
+    color: white;
+    border-width: 0 0 0 2px;
+    border-image: linear-gradient(to bottom, transparent, white 50%, transparent) 1;
+    border-image-slice: 1;
+    border-style: solid;
+
+}
+#game_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#game_image img {
+    width: 50%;
+    height: 50%;
+}
+#synopsis {
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#synopsis h2{
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: bold;
+}
+#synopsis p{
+    color: #d8d8d8;
+}
+#game_info {
+    margin-bottom: 20px;
+}
+#game_name {
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#year, #genre, #publisher, #platform{
+    margin-bottom: 10px;
+}
+#price{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.buy_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buy_button button {
+    background: rgb(0, 189, 174);
+    background: linear-gradient(90deg, rgba(0, 189, 174, 1) 0%, rgba(0, 79, 196, 1) 100%);
+    background-size: 200% 200%;
+    animation: movimiento 10s ease infinite;
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    border: #c8ffff 2px solid;
+} 
+.buy_button button:hover {
+    filter: brightness(1.1);
+}
+#offers_container{
+    margin-top: 10px;
+}
+#offers_container h4{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.offer-card {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(29, 129, 0);
+    background: linear-gradient(90deg, rgba(29, 129, 0, 1) 0%, rgba(183, 184, 0, 1) 100%);
+    background-size: 200% 200%;
+    animation: movimiento 10s ease infinite;
+    margin-top: 20px;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    border: #ffffff 2px solid;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .seller {
+    color: #fff;
+    flex-grow: 1;
+    font-weight: normal;
+    font-size: 30px;
+    width: 50%;
+  }
+  
+  .price {
+    width: 50%;
+    color: #fff;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: right;
+  }
+.offer-card:hover {
+    filter: brightness(1.1);
+}
+
+#buy_message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    color: rgb(255, 230, 0);
+    font-size: 40px;
+}
+
+
+
+.sell-card {
+    position: relative;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 5px solid #b4b4b4;
+  }
+  
+  .sell-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://pressover.news/wp-content/uploads/2020/08/Lanzamientos-Juegos-2020-e1577971593145.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+    z-index: -1;
+  }
+  
+  .sell-card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+    margin: 20px;
+    z-index: 1;
+  }
+  
+  .sell-card-text {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    flex-basis: 100%;
+  }
+  
+  .sell-card-text h3 {
+    font-size: 30px;
+    color: whitesmoke;
+    margin-bottom: 10px;
+    font-weight: bolder;
+  }
+  
+  .sell-card-button button {
+    padding: 10px 20px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 56, 166, 1) 0%, rgba(0, 114, 138, 1) 100%);
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Agrega una transición suave */
+  }
+  
+  .sell-card-button button:hover {
+    transform: translateY(-5px); /* Mueve el botón hacia arriba */
+    filter: brightness(1.2);
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Agrega una sombra suave */
+  }
+  
+  .sell-card-button button:hover::before {
+    background-color: rgba(255, 255, 255, 0.1); /* Cambia el fondo del pseudo-elemento */
+  }
+  
+  .sell-card-button button:hover,
+  .sell-card-button button:focus {
+    outline: none; /* Elimina el contorno predeterminado en el enfoque */
+  }
+  
+  .sell-card-button button:hover,
+  .sell-card-button button:active {
+    cursor: pointer; /* Cambia el cursor al pasar el ratón o hacer clic */
+  }
+  
+
+
+@media (max-width: 768px) {
+    #game_details {
+        flex-direction: column;
+    }
+    
+    #left_column, #right_column {
+        flex: auto;
+    }
+    #right_column{
+        border-width: 0 0 0 0px;
+    }
+}
+@keyframes movimiento {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}

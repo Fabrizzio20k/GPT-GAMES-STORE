@@ -1,0 +1,24 @@
+#into-jumbotron {
+    background: #159957; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to bottom,
+      #283041,
+      #0f1420
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      #283041,
+      #0f1420
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+  
+@media (max-width: 991.98px){
+    #into-jumbotron .border-right {
+      border: none !important;
+    }
+}
+
+INPUT:-webkit-autofill,SELECT:-webkit-autofill,TEXTAREA:-webkit-autofill{animation-name:onautofillstart}
+INPUT:not(:-webkit-autofill),SELECT:not(:-webkit-autofill),TEXTAREA:not(:-webkit-autofill){animation-name:onautofillcancel}
+@keyframes onautofillstart{}
+@keyframes onautofillcancel{}

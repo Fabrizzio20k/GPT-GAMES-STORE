@@ -1,0 +1,20 @@
+#general {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    padding: 8px;
+    background-color: lightblue;
+}
+
+#information {
+    background-color: darkgreen;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    justify-content: flex-start;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 60%;
+}

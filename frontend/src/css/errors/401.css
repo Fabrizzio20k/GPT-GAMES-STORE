@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Lato, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .error-code {
+    font-size: 200px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    color: whitesmoke;
+  }
+  
+  .error-description {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+  }
+  
+  .error-image {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .login-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #45a049;
+  }
