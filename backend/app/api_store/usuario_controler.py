@@ -8,11 +8,11 @@ from flask import (
 )
 
 import jwt
-from ..functionalities.validate_email import validar_correo
+from .functionalities.validate_email import validar_correo
 import datetime
 
 from .models import Usuario
-from config.local import config
+from .config.local import config
 
 usuarios_bp = Blueprint('/usuarios', __name__)
 

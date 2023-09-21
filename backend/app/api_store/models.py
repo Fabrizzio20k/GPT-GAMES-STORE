@@ -1,8 +1,8 @@
 from flask_sqlalchemy import SQLAlchemy
 import uuid
 from datetime import datetime
-from ..functionalities.api import get_game_info_api
-from config.local import config
+from .functionalities.api import get_game_info_api
+from .config.local import config
 from werkzeug.security import generate_password_hash, check_password_hash
 import sys
 

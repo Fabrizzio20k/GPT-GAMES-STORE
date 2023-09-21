@@ -6,7 +6,7 @@ from flask import (
 
 import sys
 import jwt
-from config.local import config
+from ..config.local import config
 
 from functools import wraps
 
