@@ -1,3 +1,5 @@
-$env:FLASK_APP = "./backend/app/"
-$env:FLASK_DEBUG = "true"
-flask run --port=5002
+# Ruta relativa al archivo run.py desde execute.ps1
+$scriptPath = ".\backend\run.py"
+
+# Ejecutar el script run.py utilizando Python
+python $scriptPath
