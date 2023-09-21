@@ -1,6 +1,6 @@
 import unittest
-from config.qa  import config
-from app.models import Game, Usuario, Oferta, Compra
+from .qa import config
+from .models import Game, Usuario, Oferta, Compra
 from app import create_app
 import json
 
@@ -99,7 +99,7 @@ class ProyectTests(unittest.TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertEqual(data['success'], True)
-    
+
     def test_profile_delete_fail(self):
         self.headers['X-ACCESS-TOKEN'] = self.user_valid_token
         response = self.client.delete('/profile/failure',
@@ -182,7 +182,8 @@ class ProyectTests(unittest.TestCase):
         data = json.loads(response.data)
         compra_id = data["compra"]["id"]
 
-        response = self.client.get('/compra/' + compra_id, headers=self.headers)
+        response = self.client.get(
+            '/compra/' + compra_id, headers=self.headers)
         data = json.loads(response.data)
 
         self.assertEqual(response.status_code, 200)
@@ -237,7 +238,8 @@ class ProyectTests(unittest.TestCase):
         data = json.loads(response.data)
         oferta_id = data["id"]
 
-        response = self.client.get('/oferta/' + oferta_id, headers=self.headers)
+        response = self.client.get(
+            '/oferta/' + oferta_id, headers=self.headers)
         data = json.loads(response.data)
 
         self.assertEqual(response.status_code, 200)
@@ -246,7 +248,8 @@ class ProyectTests(unittest.TestCase):
     def test_oferta_get_id_fail(self):
         game_id = 1942
         self.headers['X-ACCESS-TOKEN'] = self.user_valid_token
-        response = self.client.get('/oferta'+ str(game_id), headers=self.headers)
+        response = self.client.get(
+            '/oferta' + str(game_id), headers=self.headers)
         data = json.loads(response.data)
 
         self.assertEqual(response.status_code, 404)
@@ -285,7 +288,7 @@ class ProyectTests(unittest.TestCase):
         temp_oferta = self.new_oferta
         temp_oferta["price"] = 100
         response = self.client.patch('/oferta/' + oferta_id, headers=self.headers,
-                                        json=temp_oferta)
+                                     json=temp_oferta)
         data = json.loads(response.data)
 
         self.assertEqual(response.status_code, 200)
@@ -302,7 +305,7 @@ class ProyectTests(unittest.TestCase):
         temp_oferta = self.new_oferta
         temp_oferta["price"] = "failure"
         response = self.client.patch('/oferta/' + oferta_id, headers=self.headers,
-                                        json=temp_oferta)
+                                     json=temp_oferta)
         data = json.loads(response.data)
 
         self.assertEqual(response.status_code, 500)
@@ -316,7 +319,8 @@ class ProyectTests(unittest.TestCase):
         data = json.loads(response.data)
         oferta_id = data["id"]
 
-        response = self.client.delete('/oferta/' + oferta_id, headers=self.headers)
+        response = self.client.delete(
+            '/oferta/' + oferta_id, headers=self.headers)
         data = json.loads(response.data)
 
         self.assertEqual(response.status_code, 200)
@@ -331,8 +335,6 @@ class ProyectTests(unittest.TestCase):
         self.assertEqual(response.status_code, 404)
         self.assertEqual(data['success'], False)
         self.assertTrue(data['message'])
-
-                                    
 
     def tearDown(self):
         self.headers['X-ACCESS-TOKEN'] = self.user_valid_token
