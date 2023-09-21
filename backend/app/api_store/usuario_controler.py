@@ -8,7 +8,7 @@ from flask import (
 )
 
 import jwt
-from .functionalities.validate_email import validar_correo
+from ..functionalities.validate_email import validar_correo
 import datetime
 
 from .models import Usuario

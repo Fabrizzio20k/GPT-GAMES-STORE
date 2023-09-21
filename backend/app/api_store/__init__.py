@@ -4,8 +4,8 @@ from flask import (
     request,
     abort)
 from .usuario_controler import usuarios_bp
-from .authentication import authorize
-from .functionalities.api import do_request_api, get_game_info_api, get_game_info_api
+from ..functionalities.authentication import authorize
+from ..functionalities.api import do_request_api, get_game_info_api, get_game_info_api
 from flask_cors import CORS
 from .models import (
     db,
@@ -14,7 +14,7 @@ from .models import (
     Compra,
     Oferta,
     setup_db)
-from .functionalities.send_email import enviar_correo
+from ..functionalities.send_email import enviar_correo
 from flask_migrate import Migrate
 from datetime import datetime
 
@@ -22,10 +22,9 @@ from datetime import datetime
 def create_app(test_config=None):
     app = Flask(__name__)
     with app.app_context():
-        app.config['UPLOAD_FOLDER'] = 'static/employees'
         app.register_blueprint(usuarios_bp)
         setup_db(app, test_config['database_path'] if test_config else None)
-        CORS(app, origins=['http://localhost:8080', 'http://localhost:8081'])
+        CORS(app, origins=['http://localhost:8080'])
 
         migrate = Migrate(app, db)
 
