@@ -3,7 +3,6 @@ from flask import (
     jsonify,
     request,
     abort)
-from .usuario_controler import usuarios_bp
 from .functionalities.authentication import authorize
 from .functionalities.api import do_request_api, get_game_info_api, get_game_info_api
 from flask_cors import CORS
@@ -22,7 +21,6 @@ from datetime import datetime
 def create_app(test_config=None):
     app = Flask(__name__)
     with app.app_context():
-        app.register_blueprint(usuarios_bp)
         setup_db(app, test_config['database_path'] if test_config else None)
         CORS(app, origins=['http://localhost:8080'])
 
@@ -78,6 +76,7 @@ def create_app(test_config=None):
     def delete_profile():
         current_user_id = request.headers["user-id"]
         current_user = Usuario.query.get(current_user_id)
+
         if current_user:
 
             compras_eliminar = Compra.query.filter_by(

@@ -57,13 +57,23 @@ export const updateUserData = async (user) => {
   }
 };
 
-export const deleteUser = async (user) => {
+export const deleteUser = async () => {
+  const headers = {
+    "Content-Type": "application/json",
+    "X-ACCESS-TOKEN": sessionStorage.getItem("token"),
+    "user-id": sessionStorage.getItem("user_id"),
+  };
+
+  const config = {
+    headers: headers,
+  };
   const message_error = document.getElementById("message_error");
+
   try {
-    const { data } = await axios.delete(BASE_URL, user);
+    const { data } = await axios.delete(BASE_URL, config);
     if (data.success) {
       message_error.style.display = "none";
-      window.location.href = "/";
+      window.location.href = "/login";
     }
   } catch (error) {
     message_error.style.display = "block";
