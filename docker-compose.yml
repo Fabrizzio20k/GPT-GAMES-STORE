@@ -30,4 +30,4 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
-    command: ["npm", "run", "serve"]
+    command: ["serve", "-s", "dist", "-p", "8080"]
