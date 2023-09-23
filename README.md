@@ -41,10 +41,9 @@ de la Universidad de Ingeniería y Tecnología 💙🤍. Esperemos les guste. �
 
 ## Integrantes
 
-- Piero Jesus Guerrero Jimenez
-- Fabrizzio Nicolay Vilchez Espinoza
-- Manuel Jesus Silva
-- Ariana Vega Huamán
+- Fabrizzio Vilchez
+- Benjamin Soto
+- Angello Soldi
 
 ## Acerca del proyecto
 
