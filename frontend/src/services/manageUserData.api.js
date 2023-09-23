@@ -1,6 +1,5 @@
 import axios from "axios";
-const BASE_URL =
-  "GPT-LOAD-BALANCER-303185729.us-east-1.elb.amazonaws.com:5002/profile";
+const BASE_URL = "http://localhost:5002/profile";
 
 export const getUserData = async () => {
   const headers = {
