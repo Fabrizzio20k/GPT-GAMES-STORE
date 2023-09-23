@@ -81,27 +81,15 @@ Back-end:
 
 Base de Datos:
 
-- Flask_migrate
-- SQLAlchemy
+- SQLAlchemy (ORM)
+- PostgreSQL
 
 ### Script
 
-Para cargar el backend se ejecuta:
+Para correr toda la pagina basta con ejecutar el archivo docker-compose.yml con el comando:
 
 ```sh
-./ejecutar.sh
-```
-
-- Se debe estar dentro de la carpeta llamada backend, en el mismo nivel que la carpeta app.
-- Después, se usa ejecuta el código de los sql scripts encontrados dentro de la carpete /sql. Estos añaden la exensión uuid-ossp en la base de datos.
-- Finalmente, se inicia el servidor.
-- Debe existir una base de datos con el nombre de "project_dbp".
-
-Para cargar el frontend se ejecuta:
-
-```sh
-npm install
-npm run serve
+docker-compose up -d
 ```
 
 - Se debe estar dentro de la carpeta llamada frontedn, en el mismo nivel que la carpeta src.
@@ -154,10 +142,10 @@ Para ejecutar el sistema se tiene que correr server.py
 
 ### Equipo
 
-| Fabrizzio Vilchez                                          | Piero Guerrero                                                   | Manuel Silva                                               | Ariana Vega                                               |
-| ---------------------------------------------------------- | ---------------------------------------------------------------- | ---------------------------------------------------------- | --------------------------------------------------------- |
-| ![](https://avatars.githubusercontent.com/u/115495332?v=4) | ![](https://avatars.githubusercontent.com/u/102132128?s=400&v=4) | ![](https://avatars.githubusercontent.com/u/78549698?v=4)  | ![](https://avatars.githubusercontent.com/u/88595171?v=4) |
-| [github.com/Fabrizzio20k](https://github.com/Fabrizzio20k) | [github.com/pieroGJ121](https://github.com/JLeandroJM).          | [github.com/Manueljsilva](https://github.com/Manueljsilva) | [github.com/ArianaVega](https://github.com/ArianaVega)    |
+| Fabrizzio Vilchez                                          | Angello Soldi                                                       | Benjamin Soto                                                      |
+| ---------------------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| ![](https://avatars.githubusercontent.com/u/115495332?v=4) | ![](https://avatars.githubusercontent.com/u/103605443?v=4)          | ![](https://avatars.githubusercontent.com/u/104233590?v=4)         |
+| [github.com/Fabrizzio20k](https://github.com/Fabrizzio20k) | [https://github.com/darkblackv32](https://github.com/darkblackv32). | [https://github.com/SotoBenjamin](https://github.com/SotoBenjamin) |
 
 ### Notas extra
 
