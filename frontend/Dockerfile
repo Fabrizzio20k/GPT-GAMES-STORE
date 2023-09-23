@@ -5,6 +5,7 @@ WORKDIR /app
 COPY package.json /app
 
 RUN npm install -g serve
+RUN npm install
 
 COPY . .
 
