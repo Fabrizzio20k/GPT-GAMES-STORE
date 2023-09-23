@@ -1,0 +1,33 @@
+version: '3'
+services:
+  api_search:
+    build: 
+      context: ./backend/api_search
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    command: ["python", "run.py"]
+
+  api_store:
+    build: 
+      context: ./backend/api_store
+      dockerfile: Dockerfile
+    ports:
+      - "5002:5002"
+    command: ["python", "run.py"]
+
+  api_users:
+    build: 
+      context: ./backend/api_users
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    command: ["python", "run.py"]
+  
+  frontend:
+    build: 
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    command: ["npm", "run", "serve"]
