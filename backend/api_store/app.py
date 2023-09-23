@@ -3,16 +3,16 @@ from flask import (
     jsonify,
     request,
     abort)
-from .functionalities.authentication import authorize
+from functionalities.authentication import authorize
 from flask_cors import CORS
-from .models import (
+from models import (
     db,
     Usuario,
     Game,
     Compra,
     Oferta,
     setup_db)
-from .functionalities.send_email import enviar_correo
+from functionalities.send_email import enviar_correo
 from flask_migrate import Migrate
 
 

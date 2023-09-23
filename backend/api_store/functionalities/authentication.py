@@ -6,7 +6,7 @@ from flask import (
 
 import sys
 import jwt
-from ..config.local import config
+from config.local import config
 
 from functools import wraps
 
@@ -16,7 +16,6 @@ def authorize(f):
     def decorator(*args, **kwargs):
         token = None
         if 'X-ACCESS-TOKEN' in request.headers:
-
             token = request.headers['X-ACCESS-TOKEN']
 
         if token is None:

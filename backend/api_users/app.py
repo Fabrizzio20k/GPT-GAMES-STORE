@@ -4,7 +4,7 @@ from flask import (
     request,
     abort)
 from flask_cors import CORS
-from .models import (
+from models import (
     db,
     Usuario,
     setup_db)
@@ -12,11 +12,11 @@ from flask_migrate import Migrate
 from datetime import datetime
 
 import jwt
-from .functionalities.validate_email import validar_correo
+from functionalities.validate_email import validar_correo
 import datetime
 
-from .models import Usuario
-from .config.local import config
+from models import Usuario
+from config.local import config
 
 
 def create_app(test_config=None):
