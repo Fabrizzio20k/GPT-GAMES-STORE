@@ -18,7 +18,8 @@ def create_app(test_config=None):
     app = Flask(__name__)
     with app.app_context():
         setup_db(app, test_config['database_path'] if test_config else None)
-        CORS(app, origins="*")
+        CORS(app, origins=['http://frontend-gpt.s3-website-us-east-1.amazonaws.com',
+             'http://localhost:8081', 'http://localhost:8080'])
 
         migrate = Migrate(app, db)
 
