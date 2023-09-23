@@ -3,10 +3,10 @@ from flask import (
     jsonify,
     request,
     abort)
-from .functionalities.authentication import authorize
-from .functionalities.api import do_request_api, get_game_info_api, get_game_info_api
+from functionalities.authentication import authorize
+from functionalities.api import do_request_api, get_game_info_api, get_game_info_api
 from flask_cors import CORS
-from .models import (
+from models import (
     db,
     Game,
     setup_db)
