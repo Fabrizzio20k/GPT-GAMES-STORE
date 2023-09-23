@@ -1,7 +1,8 @@
 import Swal from "sweetalert2";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5002/";
+const BASE_URL =
+  "GPT-LOAD-BALANCER-303185729.us-east-1.elb.amazonaws.com:5002/";
 
 export const confirmarVenta = () => {
   return new Promise((resolve) => {

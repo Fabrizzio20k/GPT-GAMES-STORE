@@ -1,5 +1,6 @@
 import axios from "axios";
-const BASE_URL = "http://localhost:5001/";
+const BASE_URL =
+  "GPT-LOAD-BALANCER-303185729.us-east-1.elb.amazonaws.com:5001/";
 
 export const validateData = async (user) => {
   const message_error = document.getElementById("message_error");
