@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "http://3.208.113.56:5002/compra";
+const BASE_URL = "http://34.192.216.79:5002/compra";
 
 export const getCompras = async () => {
   const headers = {
