@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "http://172.31.83.155:5001/";
+const BASE_URL = "http://3.208.113.56:5001/";
 
 export const validateData = async (user) => {
   const message_error = document.getElementById("message_error");

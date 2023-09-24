@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL = "http://172.31.83.155:5002/profile";
+const BASE_URL = "http://3.208.113.56:5002/profile";
 
 export const getUserData = async () => {
   const headers = {

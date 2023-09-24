@@ -1,6 +1,6 @@
 import axios from "axios";
 import Swal from "sweetalert2";
-const BASE_URL = "http://172.31.83.155:5001/create";
+const BASE_URL = "http://3.208.113.56:5001/create";
 
 const confirmationRegister = () => {
   return new Promise((resolve) => {
