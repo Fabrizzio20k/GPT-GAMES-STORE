@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/search/";
-const VIDEOGAME_URL = "http://localhost:5000/videogame/";
-const COMPRA_URL = "http://localhost:5002/compra/";
+const BASE_URL = "http://api_store:5000/search/";
+const VIDEOGAME_URL = "http://api_store:5000/videogame/";
+const COMPRA_URL = "http://api_store:5002/compra/";
 
 export const getGenres = async () => {
   try {

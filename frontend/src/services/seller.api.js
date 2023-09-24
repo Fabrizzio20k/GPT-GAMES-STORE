@@ -1,7 +1,7 @@
 import Swal from "sweetalert2";
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5002/";
+const BASE_URL = "http://api_search:5002/";
 
 export const confirmarVenta = () => {
   return new Promise((resolve) => {

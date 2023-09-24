@@ -1,6 +1,6 @@
 import axios from "axios";
 import Swal from "sweetalert2";
-const BASE_URL = "http://localhost:5002/compra";
+const BASE_URL = "http://api_search:5002/compra";
 
 export const comprarJuego = async (id) => {
   const headers = {
