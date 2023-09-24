@@ -1,5 +1,7 @@
 import axios from "axios";
-const BASE_URL = "http://34.192.216.79:5001/";
+import { api_url } from "./DOMAIN";
+
+const BASE_URL = api_url + ":5001/";
 
 export const verifier_login = async () => {
   if (sessionStorage.getItem("token") === null) {
